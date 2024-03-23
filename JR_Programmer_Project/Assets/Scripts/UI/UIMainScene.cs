@@ -74,19 +74,8 @@ public class UIMainScene : MonoBehaviour
             InfoPopup.Name.text = content.GetName();
         }
     }
-    public void Exit()
+    public void BackMenu()
     {
-        EditorApplication.ExitPlaymode();
-
-        /*if(UNITY_EDITOR)
-        {
-            EditorApplication.ExitPlaymode();
-        }
-
-        else
-        {
-            Application.Quit();
-        }
-        */
+        SceneManager.LoadScene(1);
     }
 }
