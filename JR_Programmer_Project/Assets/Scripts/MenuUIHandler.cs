@@ -1,14 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-/*
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-*/
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
+
 
 
 // Sets the script to be executed later than all default scripts
@@ -21,7 +21,7 @@ public class MenuUIHandler : MonoBehaviour
     public void NewColorSelected(Color color)
     {
         // add code here to handle when a color is selected
-        MainManager.Instance.TeamColor = color;
+        
     }
     
     private void Start()
@@ -44,15 +44,7 @@ public class MenuUIHandler : MonoBehaviour
 #else
         Application.Quit(); // original code to quit Unity player
 #endif
-        /*if (UNITY_EDITOR)
-        {
-            // run this code
-        }
-        else
-        {
-            // run this code
-        }
-        */
+        
 
     }
 }
