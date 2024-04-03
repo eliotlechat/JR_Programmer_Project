@@ -76,6 +76,6 @@ public class UIMainScene : MonoBehaviour
     }
     public void BackMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
